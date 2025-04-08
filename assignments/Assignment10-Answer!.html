@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } /* 이 셋팅은 기본으로 하자. */
+
+        /* h3 {background-color: lightgray;} */
+
+        .back-lightgray { background-color: lightgray;}
+
+        /* case 1 각자 relative 형태로 위치 이동
+
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 6px solid black;
+            left: 50px;
+            top: 50px;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red-box {background-color: red;
+            position: relative;
+            left: 55px;
+            top: -245px;
+            }
+        .green-box {background-color: green;
+            position: relative;
+            left: 105px;
+            top: -295px;
+            z-index: 1000;
+        }
+        .yellow-box {background-color: yellow;
+            position: relative;
+            left: 55px;
+            top: -345px;
+        }
+*/
+        /* case 2 fixed 사용 
+            container박스 : relative - > margine
+        
+
+                .back-lightgray { background-color: lightgray;}
+
+.container {
+    width: 500px;
+    height: 300px;
+    border:5px solid black;
+    left: 51px;
+    top: 52px;
+    position: relative;
+    /* margin: 50px; 
+    margin-bottom: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red-box {background-color: red;
+    position: fixed;
+    left: 55px;
+    top: 105px;
+    }
+.green-box {background-color: green;
+    position: fixed;
+    left: 105px;
+    top: 155px;
+    z-index: 1000;
+}
+.yellow-box {background-color: yellow;
+    position: fixed;
+    left: 55px;
+    top: 205px;
+}
+*/
+
+/* case 3 - 1 박스들이 container 안에 배치된 구조 
+.container {
+    width: 500px;
+    height: 300px;
+    border:5px solid black;
+    margin: 50px; 
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red-box {background-color: red;}
+.green-box {
+    background-color: green; 
+    position: relative;
+    top: -50px;
+    left: 50px;
+    z-index: 10;
+}
+.yellow-box {
+    background-color: yellow;
+    top: -100px;
+    position: relative;
+} */
+
+.container {
+    width: 500px;
+    height: 300px;
+    border:5px solid black;
+    margin: 50px; 
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red-box {background-color: red;}
+.green-box {
+    background-color: green; 
+    position: absolute;
+    left: 50px;
+    top: 50px;
+
+}
+.yellow-box {
+    background-color: yellow;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class="back-lightgray"> -->
+    <h3 class="back-lightgray">배경색이 lightgray</h3>
+    <h3 class="back-lightgray">h3 글자</h3>
+    <!-- </div> -->
+
+        <!-- case 3 - 1 -->
+    <!-- <div class="container"> 
+        <div class="box red-box">A</div>
+        <div class="box green-box">B</div>
+        <div class="box yellow-box">C</div>
+    </div>-->
+
+        <!-- case 3 - 2 
+    <div class="container">
+        <div class="box red-box">A</div>
+        <div class="box yellow-box">B</div>
+        <div class="box green-box">C</div>
+    </div>-->
+
+    <!-- case 4 -->
+    <div class="container">
+        <div class="box red-box">A</div>
+        <div class="box green-box">B</div>
+        <div class="box yellow-box">C</div>
+    </div>
+    
+    <div class="box">
+        다음에 추가할 내용 
+    </div>
+
+</body>
+</html>
