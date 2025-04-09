@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+
+    animation-name: box-ani1;
+            animation-duration: 3s;
+
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+}
+
+@keyframes box-ani1 {
+    0% {
+        background-color: blueviolet;
+        left:0px;
+    }
+        25%{
+        background-color: aqua;
+        left:100px;
+    }
+    50%{
+        background-color: yellowgreen;
+        left: 200px;
+    }
+    75%{
+        background-color: aqua;
+        left: 100px;
+    }
+    100%{
+        background-color: blueviolet;
+        left:0px;
+    }
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    animation-delay: 1s;
+    animation-name: box-ani2;
+            animation-duration: 3s;
+
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+}
+
+@keyframes box-ani2 {
+    0% {
+        background-color: blueviolet;
+        top:0px;
+    }
+        25%{
+        background-color: aqua;
+        top:100px;
+    }
+    50%{
+        background-color: yellowgreen;
+        top: 200px;
+    }
+    75%{
+        background-color: aqua;
+        top: 100px;
+    }
+    100%{
+        background-color: blueviolet;
+        top:0px;
+    }
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    animation-delay: 2s;
+    animation-name: box-ani3;
+            animation-duration: 3s;
+
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+}
+
+@keyframes box-ani3 {
+    0% {
+        background-color: blueviolet;
+        left:0px;
+        top:0px;
+    }
+        25%{
+        background-color: aqua;
+        left:100px;
+        top:100px;
+    }
+    50%{
+        background-color: yellowgreen;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: aqua;
+        left: 100px;
+        top: 100px;
+    }
+    100%{
+        background-color: blueviolet;
+        left:0px;
+        top:0px;
+    }
+}
+
+.box {
+    position: relative;
+}
+.box:hover {
+    animation-play-state: paused;
+}
+    </style>
+</head>
+<body>
+    <div class="box box1"></div><br>
+    <div class="box box2"></div><br>
+    <div class="box box3"></div>
+</body>
+</html>
