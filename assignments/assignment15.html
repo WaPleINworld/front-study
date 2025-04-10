@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightgrey;
+            position: relative;
+            transition-property: all;
+            transition-duration: 1s;
+            transition: all 2s;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            justify-content:top;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .red-box {
+            background-color: red;
+            border: 1px solid black;
+        }
+        .blue-box {
+            background-color: blue;
+            border: 1px solid black;
+        }
+        .black-box {
+            background-color: black;
+            border: 1px solid black;
+            transition-property: all;
+            transition-duration: 1s;
+            position: relative;
+            left: 0px;
+        }
+        .green-box {
+            background-color: green;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .yellow-box {
+            background-color: yellow;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .container:hover {
+            .red-box {
+                width: 400px;
+            }
+            .blue-box {
+                background-color: purple;
+            }
+            .black-box {
+                left: 200px;
+            }
+        }
+
+        .green-box:hover {
+            border: 20px solid red;
+        }
+        .yellow-box:hover {
+            border: 20px solid red;
+        }
+        .radius {
+            border: 10px solid blueviolet;
+            background-color: skyblue;
+            width: 200px;
+            height: 200px;
+            transition : all 1s;
+        }
+
+        .radius:hover {
+            border-radius: 50%;
+            background-color: blue;
+        }
+
+        .rotate {
+            box-sizing: border-box;
+            position: relative;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: darkgray;
+            border:1px solid black;
+
+            animation-name:rotate-ani;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate-ani {
+            0% {
+        background-color: blueviolet;
+        right:0px;
+        transform: rotate(0deg);
+    }
+        25%{
+        background-color: aqua;
+        right:200px;
+        transform: rotate(360deg);
+    }
+        50%{
+        background-color: yellowgreen;
+        right: 400px;
+        transform: rotate(720deg);
+    }
+        75%{
+        background-color: aqua;
+        right: 200px;
+        transform: rotate(360deg);
+    }
+        100%{
+        background-color: blueviolet;
+        right:0px;
+        transform: rotate(0deg);
+        }
+        }
+</style>
+</head>
+<body>
+
+<div class="container">
+        <div class="box red-box"></div>
+        <div class="box blue-box"></div>
+        <div class="box black-box"></div>
+        <div class="box green-box">
+        </div><div class="box yellow-box"></div>
+    </div>
+            <div class="radius"></div>
+            <div class="rotate"></div>
+<h1>Welcome to my web page "Bingo Bango" xD</h1>
+
+</body>
+</html>
+

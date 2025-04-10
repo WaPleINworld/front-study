@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .rotate {
+            box-sizing: border-box;
+            position: relative;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: darkgray;
+            border:1px solid black;
+
+            animation-name:rotate-ani;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rotate-ani {
+            0% {
+        background-color: blueviolet;
+        transform:translateX(0px) rotate(0deg) ;
+    }
+        50%{
+        background-color: yellowgreen;
+        transform:translateX(200px) rotate(180deg) ;
+    }
+        100%{
+        background-color: blueviolet;
+        right:0px;
+        transform: translateX(400px) rotate(360deg);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate"></div>
+</body>
+</html>

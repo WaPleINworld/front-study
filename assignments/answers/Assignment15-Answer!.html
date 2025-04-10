@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightgrey;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            justify-content:top;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .red-box {
+            background-color: red;
+            border: 1px solid black;
+        }
+        .blue-box {
+            background-color: blue;
+            border: 1px solid black;
+        }
+        .black-box {
+            background-color: black;
+            border: 1px solid black;
+            transition-property: all;
+            left: 0;
+        }
+        .green-box {
+            background-color: green;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .yellow-box {
+            background-color: yellow;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        .container:hover {
+            .red-box {
+                width: 400px;
+            }
+            .blue-box {
+                background-color: purple;
+            }
+            .black-box {
+                transform: translateX(200px);
+            }
+        }
+
+        .green-box:hover {
+            border: 20px solid red;
+        }
+        .yellow-box:hover {
+            border: 20px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box red-box"></div>
+        <div class="box blue-box"></div>
+        <div class="box black-box"></div>
+        <div class="box green-box">
+        </div><div class="box yellow-box"></div>
+    </div>
+</body>
+</html>
