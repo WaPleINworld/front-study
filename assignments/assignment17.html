@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+            
+        
+        .container {
+            margin: 0 auto;
+            display: grid;
+
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+
+            /* grid-template-rows: 100px 100px 100px; */
+            grid-template-rows: 100px 300px 100px;
+            grid-template-columns: 490px 210px;
+            grid-template-areas:
+            "header header"
+            "sidebar sidebar"
+            "content content"
+            "footer footer"
+        }
+
+        .headers1 {
+            display: inline-block;
+            background-color: red;
+            grid-area: header;
+            height: 100px;
+            width: 200px;
+        }
+        .headers2 {
+            background-color: red;
+            grid-area:header;
+            height: 100px;
+            width: 100px;
+        }
+
+        #sidebar {
+            display: inline-block;
+            background-color: orange;
+            grid-area: sidebar;
+        }
+
+        #content {
+            display: inline-block;
+            background-color: seagreen;
+            grid-area: content;
+        }
+
+        #footer {
+            background-color: blue;
+            grid-area: footer;
+            width: 700px;
+            height: 100px;
+            justify-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .text {
+            color: white;
+            justify-self: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="header">
+            <div class="headers1">
+                <div class="text">메인메뉴</div>
+            </div>
+            <div class="headers2"></div>
+        </div>
+        <div id="sidebar"></div>
+        <div id="content">
+            <div class="contents"></div>
+            <div class="contents"></div>
+            <div class="contents"></div>
+            <div class="contents"></div>
+            <div class="contents"></div>
+            <div class="contents"></div>
+        </div>
+        <div id="footer">
+            <div class="text">footer</div>
+        </div>
+    </div>
+
+</body>
+</html>
