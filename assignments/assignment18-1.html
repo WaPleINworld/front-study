@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin:0 auto;
+            margin-top: 50px;
+            justify-content: center;
+        }
+        .item {
+            border:1px solid black;
+        }
+        .container {
+            position: relative;
+            display: grid;
+            grid-template-rows: repeat(19, 30px);
+            grid-template-columns: repeat(8, 100px);
+            margin:0 auto;
+            size: 800px;
+        }
+
+        .fi, .fiv, .sev, .ni {
+            background-color: yellow;
+        }
+        .ei, .te {
+            background-color: chartreuse;
+        }
+        .fi {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .se {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background-color: gray;
+        }
+        .th {
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 4;
+            grid-row-end: 8;
+            background-color: rebeccapurple;
+        }
+        .fo {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 8;
+            grid-row-end: 16;
+            background-color: aquamarine;
+        }
+        .fiv {
+            grid-column-start: 4;
+            grid-column-end: 9;
+            grid-row-start: 8;
+            grid-row-end: 12;
+        }
+        .si {
+            grid-column-start: 4;
+            grid-column-end: 9;
+            grid-row-start: 12;
+            grid-row-end: 16;
+            background-color: blueviolet;
+        }
+        .sev {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 16;
+            grid-row-end: 20;
+        }
+        .ei {
+            grid-column-start:3;
+            grid-column-end: 5 ;
+            grid-row-start: 16;
+            grid-row-end: 20;
+        }
+        .ni {
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 16;
+            grid-row-end: 20;
+        }
+        .te {
+            grid-column-start: 7;
+            grid-column-end: 9;
+            grid-row-start: 16;
+            grid-row-end: 20;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item fi">
+        </div><div class="item se"></div>
+        <div class="item th"></div>
+        <div class="item fo"></div>
+        <div class="item fiv"></div>
+        <div class="item si"></div>
+        <div class="item sev"></div>
+        <div class="item ei"></div>
+        <div class="item ni"></div>
+        <div class="item te"></div>
+    </div>
+</body>
+</html>
